@@ -1,7 +1,7 @@
 package com.google.gdg.bcn.juguete.presenters;
 
+import com.google.gdg.bcn.juguete.framework.ViewBase;
 import com.google.gdg.bcn.juguete.models.Color_DataBase;
-import com.google.gdg.bcn.juguete.framework.MVPActivity;
 import com.google.gdg.bcn.juguete.framework.PresenterBase;
 import com.google.gdg.bcn.juguete.views.Color_View;
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Color_Presenter extends PresenterBase {
 
-    public Color_Presenter(MVPActivity view) {
+    public Color_Presenter(ViewBase view) {
         super(view);
     }
 

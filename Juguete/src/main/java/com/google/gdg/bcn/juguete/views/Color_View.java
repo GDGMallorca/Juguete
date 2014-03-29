@@ -8,12 +8,13 @@ import android.widget.Toast;
 
 
 import com.google.gdg.bcn.juguete.R;
-import com.google.gdg.bcn.juguete.framework.MVPActivity;
+import com.google.gdg.bcn.juguete.framework.ViewBase;
+import com.google.gdg.bcn.juguete.presenters.Color_Presenter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Color_View extends MVPActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
+public class Color_View extends ViewBase implements View.OnClickListener, AdapterView.OnItemClickListener {
     private ArrayAdapter<String> adapter;
     private ListView list;
 
@@ -45,7 +46,7 @@ public class Color_View extends MVPActivity implements View.OnClickListener, Ada
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.activity_color_button_add:
-                execute("onClickButtonAdd", null);
+                new Color_Presenter(this).onClickButtonAdd();
             break;
         }
     }

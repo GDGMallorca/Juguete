@@ -1,9 +1,9 @@
 package com.google.gdg.bcn.juguete.framework;
 
 public class PresenterBase {
-    protected MVPActivity view;
+    protected ViewBase view;
 
-    public PresenterBase(MVPActivity view) {
+    public PresenterBase(ViewBase view) {
         this.view = view;
     }
 }
